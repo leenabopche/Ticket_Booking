@@ -1,0 +1,64 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 27% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 240 17% 14%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 240 17% 14%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217 76% 51%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 240 5% 25%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 263 70% 71%;
+    --accent-foreground: 240 5% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 5% 26%;
+    --input: 240 5% 26%;
+    --ring: 262 83% 58%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .text-glow {
+    text-shadow: 0 0 10px theme('colors.accent.DEFAULT'), 0 0 20px rgba(200, 180, 255, 0.2);
+  }
+  .card-glow {
+    box-shadow: 0 0 15px rgba(130, 100, 255, 0.15);
+    transition: box-shadow 0.3s ease;
+  }
+  .card-glow:hover {
+    box-shadow: 0 0 20px rgba(150, 120, 255, 0.3);
+  }
+  .btn-hover-effect {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn-hover-effect:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(150, 120, 255, 0.2);
+  }
+}
