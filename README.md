@@ -5,23 +5,23 @@ Event Horizon - Ticket Booking Management System is a modern web application tha
 Local Development
 Clone the repository:
 
-bash
+bashL:
 git clone <repository-url>
 cd event-horizon-booking-system
 Install dependencies:
 
-bash
+bash:
 npm install
 Run the app:
 
-bash
+bash:
 npm run dev
 Open in browser: Visit http://localhost:8080
 
 **Docker Setup**
 Build and start containers:
 
-bash
+bash:
 docker-compose up -d
 Open the app: Visit http://localhost:8080
 
